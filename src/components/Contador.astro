@@ -1,0 +1,26 @@
+---
+    const hoy = new Date();
+    const usarHoy = new Date(hoy.getFullYear(), hoy.getMonth(), hoy.getDate());
+    const inicio = new Date(2024, 8, 11);
+    const usarInicio = new Date(inicio.getFullYear(), inicio.getMonth(), inicio.getDate());
+
+    const diferencia = usarHoy - usarInicio;
+
+    const diasPasados = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+---
+
+<h1 class="text-[18rem] md:text-[7rem] font-bold text-white md:absolute top-20">{diasPasados}</h1>
+
+<style>
+  h1 {
+    font-family: "Pixelify Sans", sans-serif;
+    text-shadow:
+      0px 0px 10px #fff,
+      /* Parte de luz */ 4px 2px 12px #dcb500,
+      -4px 2px 12px #dcb500,
+      /* Subida del fuego */ 0px -6px 14px #ff7a00,
+      0px -12px 14px #ff6300,
+      0px -20px 14px #ff4400,
+      /* Azuleo de la llama */ 0px -30px 14px #0a7bff;
+  }
+</style>
